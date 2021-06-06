@@ -1,0 +1,130 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  line-height: 1.7; }
+
+body {
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #777777;
+  padding: 30px; }
+
+.btn, .btn:link, .btn:visited {
+  position: relative;
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 100px;
+  padding: 15px 40px;
+  font-size: 1.6rem;
+  transition: all .2s; }
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2); }
+
+.btn::after {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 100px;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all .3s; }
+
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0; }
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
+
+.btn--white {
+  background-color: #fff;
+  color: #777; }
+
+.btn--white::after {
+  background-color: #fff; }
+
+.btn-blue {
+  background-color: #8597fd;
+  color: #fff;
+  margin-top: 3rem;
+  margin-left: 50%;
+  transform: translateX(-50%); }
+  .btn-blue::after {
+    background-color: #8597fd; }
+  .btn-blue:hover {
+    transform: translate(-50%, -3px); }
+  .btn-blue:active {
+    transform: translate(-50%, -1px); }
+
+.btn-text:link, .btn-text:visited {
+  color: #546dfc;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px solid #546dfc;
+  padding: .3rem;
+  font-size: 1.6rem;
+  text-transform: capitalize;
+  border-radius: 2px;
+  background-color: #f0f0f0; }
+
+.btn-text:hover {
+  background-color: #546dfc;
+  color: #fff;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  transform: translateY(-0.2rem); }
+
+.btn-text:active {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  transform: translateY(0); }
+
+.margin-bottom-big {
+  margin-bottom: 11rem; }
+
+.margin-bottom-small {
+  margin-bottom: .3rem; }
+
+.alignment {
+  justify-content: center; }
+
+.composition {
+  position: relative; }
+  .composition__photo {
+    width: 350px;
+    background-size: cover;
+    position: absolute;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+    border-radius: .2rem;
+    position: absolute;
+    z-index: 10;
+    cursor: pointer;
+    outline-offset: .5rem;
+    transition: all .2s; }
+    .composition__photo--p1 {
+      left: 0;
+      top: -2rem; }
+    .composition__photo--p2 {
+      right: 1.2rem;
+      top: 2rem; }
+    .composition__photo--p3 {
+      left: 10%;
+      top: 12rem; }
+    .composition__photo:hover {
+      outline: 0.5rem solid #546dfc;
+      transform: scale(1.05);
+      box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+      z-index: 20; }

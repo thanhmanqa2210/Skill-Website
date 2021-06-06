@@ -1,0 +1,132 @@
+$lightBlue-color: #8597fd;
+$mediumBlue-color: #546dfc;
+$darkBlue-color: #1c3eff;
+$height-header: 95vh;
+$white-color: #fff;
+$color-black:#000;
+$default-font-size: 1.6rem;
+$bg-btn-color:rgb(240, 240, 240);
+$color-secondary-light: #ffb900; //Màu Cam
+$color-secondary-dark: #ff7730;
+$color-tertiary-light:#55c57a; // Màu xanh lá cây
+$color-tertiary-dark:#28b485;
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.7;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: #777777;
+    padding: 30px;
+}
+
+.btn {
+    &,
+    &:link,
+    &:visited {
+        position: relative;
+        display: inline-block;
+        text-transform: uppercase;
+        text-decoration: none;
+        border-radius: 100px;
+        padding: 15px 40px;
+        font-size: 1.6rem;
+        transition: all .2s;
+    }
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 5px 20px rgba($color: #000000, $alpha: .2);
+    }
+    &::after {
+        position: absolute;
+        display: inline-block;
+        content: "";
+        width: 100%;
+        height: 100%;
+        border-radius: 100px;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all .3s;
+    }
+    &:hover::after {
+        transform: scaleX(1.4) scaleY(1.6);
+        opacity: 0;
+    }
+    &:active {
+        transform: translateY(-1px);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    }
+    &--white {
+        background-color: $white-color;
+        color: #777;
+    }
+    &--white::after {
+        background-color: #fff;
+    }
+    &-blue {
+        background-color: $lightBlue-color;
+        color: $white-color;
+        margin-top: 3rem;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        &::after {
+            background-color: $lightBlue-color;
+        }
+        &:hover {
+            transform: translate(-50%, -3px);
+        }
+        &:active {
+            transform: translate(-50%, -1px);
+        }
+    }
+}
+
+.btn-text {
+    &:link,
+    &:visited {
+        color: $mediumBlue-color;
+        display: inline-block;
+        text-decoration: none;
+        border-bottom: 1px solid $mediumBlue-color;
+        padding: .3rem;
+        font-size: $default-font-size;
+        text-transform: capitalize;
+        border-radius: 2px;
+        background-color: $bg-btn-color;
+    }
+    &:hover {
+        background-color: $mediumBlue-color;
+        color: $white-color;
+        box-shadow: 0 1rem 2rem rgba($color-black, .15);
+        transform: translateY(-.2rem);
+    }
+    &:active {
+        box-shadow: 0 .5rem 1rem rgba($color-black, .15);
+        transform: translateY(0);
+    }
+}
+
+.margin-bottom-big {
+    margin-bottom: 11rem;
+}
+
+.margin-bottom-small {
+    margin-bottom: .3rem;
+}
+
+.alignment {
+    justify-content: center;
+}
