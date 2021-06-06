@@ -119,6 +119,10 @@ body {
     }
 }
 
+.margin-top-big {
+    margin-top: 7rem;
+}
+
 .margin-bottom-big {
     margin-bottom: 11rem;
 }
@@ -127,6 +131,16 @@ body {
     margin-bottom: .3rem;
 }
 
+.center-text {
+    display: inline-block;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
 .alignment {
     justify-content: center;
+}
+
+.text-justify {
+    text-align: justify;
 }

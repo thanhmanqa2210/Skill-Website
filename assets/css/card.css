@@ -93,14 +93,25 @@ body {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   transform: translateY(0); }
 
+.margin-top-big {
+  margin-top: 7rem; }
+
 .margin-bottom-big {
   margin-bottom: 11rem; }
 
 .margin-bottom-small {
   margin-bottom: .3rem; }
 
+.center-text {
+  display: inline-block;
+  margin-left: 50%;
+  transform: translateX(-50%); }
+
 .alignment {
   justify-content: center; }
+
+.text-justify {
+  text-align: justify; }
 
 .card {
   perspective: 150rem;
@@ -125,17 +136,17 @@ body {
       background-color: #fff; }
     .card-size--back {
       background-color: green;
-      transform: rotate(180deg); }
-    .card-size--front:hover {
       transform: rotateY(180deg); }
-    .card-size--back:hover {
-      transform: rotate(0deg); }
     .card-size--back-1 {
       background-image: linear-gradient(to right, #ffb900, #ff7730); }
     .card-size--back-2 {
       background-image: linear-gradient(to right, #8597fd, #1c3eff); }
     .card-size--back-3 {
       background-image: linear-gradient(to right, #55c57a, #28b485); }
+  .card:hover .card-size--front {
+    transform: rotateY(-180deg); }
+  .card:hover .card-size--back {
+    transform: rotateY(0); }
   .card__picture {
     width: 25.85rem;
     border-radius: 5rem;

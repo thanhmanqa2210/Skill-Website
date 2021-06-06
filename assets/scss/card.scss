@@ -23,13 +23,7 @@
         }
         &--back {
             background-color: green;
-            transform: rotate(180deg);
-        }
-        &--front:hover {
             transform: rotateY(180deg);
-        }
-        &--back:hover {
-            transform: rotate(0deg);
         }
         &--back-1 {
             background-image: linear-gradient(to right, $color-secondary-light, $color-secondary-dark);
@@ -40,6 +34,12 @@
         &--back-3 {
             background-image: linear-gradient(to right, $color-tertiary-light, $color-tertiary-dark);
         }
+    }
+    &:hover &-size--front {
+        transform: rotateY(-180deg);
+    }
+    &:hover &-size--back {
+        transform: rotateY(0);
     }
     &__picture {
         width: 25.85rem;
