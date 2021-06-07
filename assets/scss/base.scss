@@ -84,6 +84,7 @@ body {
         margin-top: 3rem;
         margin-left: 50%;
         border: none;
+        cursor: pointer;
         transform: translateX(-50%);
         &::after {
             background-color: $lightBlue-color;

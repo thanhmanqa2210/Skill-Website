@@ -65,6 +65,7 @@ body {
   margin-top: 3rem;
   margin-left: 50%;
   border: none;
+  cursor: pointer;
   transform: translateX(-50%); }
   .btn-blue::after {
     background-color: #8597fd; }
@@ -242,7 +243,8 @@ body {
       clip-path: circle(50% at 50% 50%);
       transform: translateX(-3rem);
       margin-top: -1rem;
-      shape-outside: circle(50% at 50% 50%); }
+      shape-outside: circle(50% at 50% 50%);
+      cursor: pointer; }
     .container .testimonial__img {
       width: 100%;
       transition: all .3s; }
@@ -358,9 +360,6 @@ body {
     font-weight: 700;
     letter-spacing: 0.5rem;
     cursor: pointer;
-    background-image: linear-gradient(to right, #8597fd, #1c3eff);
-    color: transparent;
-    -webkit-background-clip: text;
     transition: all .2s; }
     .footer-heading:hover {
       transform: skew(15deg, 0deg) scale(1.2) translateX(-45%);
