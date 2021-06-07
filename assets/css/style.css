@@ -117,6 +117,9 @@ body {
 .aligment-left {
   margin-left: 10%; }
 
+.border-top {
+  border-top: 2px solid #7f7f7f; }
+
 .header {
   background-image: linear-gradient(to right bottom, rgba(142, 158, 252, 0.8), rgba(35, 66, 243, 0.8)), url(../img/background1.jpg);
   background-size: cover;
@@ -159,175 +162,229 @@ body {
       animation-fill-mode: backwards; }
 
 /* Container */
-.container {
-  /*section skills*/
-  /*section courses*/
-  /*section-testimonials*/
-  /* section-enroll */ }
-  .container .heading-secondary {
+.heading-secondary {
+  display: inline-block;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.5rem;
+  cursor: pointer;
+  background-image: linear-gradient(to right, #8597fd, #1c3eff);
+  color: transparent;
+  -webkit-background-clip: text;
+  transition: all .2s; }
+  .heading-secondary:hover {
+    transform: skew(15deg, 0deg) scale(1.2) translateX(-45%);
+    text-shadow: 0.5rem 1rem 10rem rgba(0, 0, 0, 0.5); }
+
+.heading-tertiry {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+.paragraph {
+  font-size: 1.6rem;
+  text-align: justify; }
+  .paragraph:not(:last-child) {
+    margin-bottom: 3rem; }
+
+/*section skills*/
+.section-skills {
+  padding: 20rem 0;
+  background-image: linear-gradient(to right bottom, rgba(142, 158, 252, 0.77), rgba(35, 66, 243, 0.77)), url(../img/background2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  clip-path: ellipse(70% 50% at 50% 50%); }
+
+.skill-box {
+  background-color: #fff;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 2.5rem 2.5rem 5rem 2.5rem;
+  border-radius: 5rem;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+  .skill-box_icon {
+    font-size: 5rem;
+    margin-bottom: 1.5rem;
     display: inline-block;
-    margin-left: 50%;
-    transform: translateX(-50%);
-    font-size: 3.5rem;
-    text-transform: uppercase;
-    font-weight: 700;
-    letter-spacing: 0.5rem;
-    cursor: pointer;
     background-image: linear-gradient(to right, #8597fd, #1c3eff);
     color: transparent;
     -webkit-background-clip: text;
-    transition: all .2s; }
-    .container .heading-secondary:hover {
-      transform: skew(15deg, 0deg) scale(1.2) translateX(-45%);
-      text-shadow: 0.5rem 1rem 10rem rgba(0, 0, 0, 0.5); }
-  .container .heading-tertiry {
-    font-size: 1.6rem;
-    font-weight: 700;
-    text-transform: uppercase; }
-  .container .paragraph {
-    font-size: 1.6rem;
-    text-align: justify; }
-    .container .paragraph:not(:last-child) {
-      margin-bottom: 3rem; }
-  .container .section-skills {
-    padding: 20rem 0;
-    background-image: linear-gradient(to right bottom, rgba(142, 158, 252, 0.77), rgba(35, 66, 243, 0.77)), url(../img/background2.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    clip-path: ellipse(70% 50% at 50% 50%); }
-  .container .skill-box {
-    background-color: #fff;
-    font-size: 1.5rem;
-    text-align: center;
-    padding: 2.5rem 2.5rem 5rem 2.5rem;
-    border-radius: 5rem;
-    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
-    .container .skill-box_icon {
-      font-size: 5rem;
-      margin-bottom: 1.5rem;
-      display: inline-block;
-      background-image: linear-gradient(to right, #8597fd, #1c3eff);
-      color: transparent;
-      -webkit-background-clip: text;
-      transition: all 0.25s; }
-      .container .skill-box_icon:hover {
-        cursor: pointer;
-        transform: translateY(-1rem) scale(1.1); }
-  .container .section-courses {
-    background-color: #e9e9e9;
-    padding: 25rem 0 10rem 0;
-    margin-top: -20rem; }
-  .container .section-testimonials {
-    position: relative;
-    padding: 5rem 0; }
-    .container .section-testimonials a {
-      margin: 0 auto;
-      text-align: center; }
-  .container .testimonial {
-    padding: 6rem 6rem 6rem 9rem;
-    box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.15);
-    font-size: 1.6rem;
-    border-radius: 100rem;
-    margin-bottom: 3rem;
-    background-color: rgba(255, 255, 255, 0.1); }
-    .container .testimonial__shape {
-      width: 15rem;
-      height: 15rem;
-      position: relative;
-      float: left;
-      clip-path: circle(50% at 50% 50%);
-      transform: translateX(-3rem);
-      margin-top: -1rem;
-      shape-outside: circle(50% at 50% 50%); }
-    .container .testimonial__img {
-      width: 100%;
-      transition: all .3s; }
-    .container .testimonial__caption {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, 20%);
-      color: #fff;
-      font-size: 1.7rem;
-      text-transform: uppercase;
-      text-align: center;
-      opacity: 0;
-      transition: all .5s;
-      text-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.6); }
-    .container .testimonial:hover .testimonial__caption {
-      opacity: 1;
-      transform: translate(-50%, -50%); }
-    .container .testimonial:hover .testimonial__img {
-      transform: scale(1.05);
-      filter: blur(0.5rem) brightness(70%); }
-  .container .section-enroll {
-    padding: 10rem 0;
-    background-image: linear-gradient(to right bottom, #8597fd, #1c3eff); }
-  .container .enroll {
-    background-image: radial-gradient(157% 173% ellipse at -27%, rgba(255, 255, 255, 0.8) 50%, transparent 50%), url("../img/background4.jpg");
-    background-size: cover;
-    height: 47rem;
-    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
-    border-radius: 5rem; }
-    .container .enroll h2 {
-      margin-left: 13.8rem; }
-    .container .enroll__form {
-      padding: 6rem; }
-    .container .enroll .form__group:not(:last-child) {
-      margin-bottom: 2rem; }
-    .container .enroll .form__input {
-      font-size: 1.5rem;
-      font-family: inherit;
-      padding: 1.5rem 2rem;
-      color: inherit;
-      border-radius: .5rem;
-      border: 1px solid #ccc;
-      display: block;
-      background-color: rgba(255, 255, 255, 0.5);
-      width: 40%; }
-    .container .enroll .form__input:focus {
-      outline: none;
-      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
-      border-bottom: 3px solid #8597fd; }
-    .container .enroll .form__input:focus:invalid {
-      border-bottom: 3px solid orange; }
-    .container .enroll .form__input::-webkit-input-placeholder {
-      color: #c51414; }
-    .container .enroll .form__radio-input:checked ~ .form__radio-label .form__radio-button::after {
-      display: block; }
-    .container .enroll .form__label {
-      font-size: 1.2rem;
-      font-weight: 700;
-      margin-left: 2rem;
-      margin-top: .7rem;
-      display: block;
-      transition: all .3s; }
-    .container .enroll .form__radio-group {
-      width: 20%;
-      display: inline-block; }
-    .container .enroll .form__radio-label {
-      font-size: 1.6rem;
+    transition: all 0.25s; }
+    .skill-box_icon:hover {
       cursor: pointer;
-      position: relative;
-      padding-left: 3.5rem; }
-    .container .enroll .form__radio-button {
-      height: 3rem;
-      width: 3rem;
-      border: 0.5rem solid #8597fd;
-      border-radius: 10rem;
-      display: inline-block;
-      position: absolute;
-      left: 0;
-      top: -.4rem; }
-    .container .enroll .form__radio-button::after {
-      content: "";
-      display: none;
-      height: 1.2rem;
-      width: 1.2rem;
-      border-radius: 50%;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      background-color: #8597fd; }
+      transform: translateY(-1rem) scale(1.1); }
+
+/*section courses*/
+.section-courses {
+  background-color: #e9e9e9;
+  padding: 25rem 0 10rem 0;
+  margin-top: -20rem; }
+
+/*section-testimonials*/
+.section-testimonials {
+  position: relative;
+  padding: 5rem 0; }
+  .section-testimonials a {
+    margin: 0 auto;
+    text-align: center; }
+
+.testimonial {
+  padding: 6rem 6rem 6rem 9rem;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.15);
+  font-size: 1.6rem;
+  border-radius: 100rem;
+  margin-bottom: 3rem;
+  background-color: rgba(255, 255, 255, 0.1); }
+  .testimonial__shape {
+    width: 15rem;
+    height: 15rem;
+    position: relative;
+    float: left;
+    clip-path: circle(50% at 50% 50%);
+    transform: translateX(-3rem);
+    margin-top: -1rem;
+    shape-outside: circle(50% at 50% 50%); }
+  .testimonial__img {
+    width: 100%;
+    transition: all .3s; }
+  .testimonial__caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    color: #fff;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    text-align: center;
+    opacity: 0;
+    transition: all .5s;
+    text-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.6); }
+  .testimonial:hover .testimonial__caption {
+    opacity: 1;
+    transform: translate(-50%, -50%); }
+  .testimonial:hover .testimonial__img {
+    transform: scale(1.05);
+    filter: blur(0.5rem) brightness(70%); }
+
+/* section-enroll */
+.section-enroll {
+  padding: 10rem 0;
+  background-image: linear-gradient(to right bottom, #8597fd, #1c3eff); }
+
+.enroll {
+  background-image: radial-gradient(157% 173% ellipse at -27%, rgba(255, 255, 255, 0.8) 50%, transparent 50%), url("../img/background4.jpg");
+  background-size: cover;
+  height: 47rem;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+  border-radius: 5rem; }
+  .enroll h2 {
+    margin-left: 13.8rem; }
+  .enroll__form {
+    padding: 6rem; }
+  .enroll .form__group:not(:last-child) {
+    margin-bottom: 2rem; }
+  .enroll .form__input {
+    font-size: 1.5rem;
+    font-family: inherit;
+    padding: 1.5rem 2rem;
+    color: inherit;
+    border-radius: .5rem;
+    border: 1px solid #ccc;
+    display: block;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 40%; }
+  .enroll .form__input:focus {
+    outline: none;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+    border-bottom: 3px solid #8597fd; }
+  .enroll .form__input:focus:invalid {
+    border-bottom: 3px solid orange; }
+  .enroll .form__input::-webkit-input-placeholder {
+    color: #c51414; }
+  .enroll .form__radio-input:checked ~ .form__radio-label .form__radio-button::after {
+    display: block; }
+  .enroll .form__label {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-left: 2rem;
+    margin-top: .7rem;
+    display: block;
+    transition: all .3s; }
+  .enroll .form__radio-group {
+    width: 20%;
+    display: inline-block; }
+  .enroll .form__radio-label {
+    font-size: 1.6rem;
+    cursor: pointer;
+    position: relative;
+    padding-left: 3.5rem; }
+  .enroll .form__radio-button {
+    height: 3rem;
+    width: 3rem;
+    border: 0.5rem solid #8597fd;
+    border-radius: 10rem;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: -.4rem; }
+  .enroll .form__radio-button::after {
+    content: "";
+    display: none;
+    height: 1.2rem;
+    width: 1.2rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #8597fd; }
+
+/* footer */
+.footer {
+  background-color: #333333;
+  font-size: 1.4rem;
+  padding-bottom: 10rem; }
+  .footer__logo-box {
+    padding: 10rem 0;
+    text-align: center; }
+  .footer__logo {
+    width: 20rem;
+    height: auto;
+    cursor: pointer; }
+  .footer__title {
+    display: block;
+    width: 27.5rem;
+    color: #546dfc; }
+
+.footer__navigation .nav__list {
+  display: inline-block;
+  list-style: none; }
+  .footer__navigation .nav__list .nav__item {
+    margin-top: 2rem;
+    display: inline-block;
+    border-radius: 5rem; }
+    .footer__navigation .nav__list .nav__item:not(:first-child) {
+      margin-left: 1.4rem; }
+    .footer__navigation .nav__list .nav__item:hover, .footer__navigation .nav__list .nav__item:active {
+      color: #546dfc;
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+      transform: translateY(-0.2rem) scale(1.05); }
+  .footer__navigation .nav__list .nav__link:link, .footer__navigation .nav__list .nav__link:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+    color: #c7c7c7; }
+  .footer__navigation .nav__list .nav__link:hover, .footer__navigation .nav__list .nav__link:active {
+    color: #546dfc; }
+
+.footer__copyright {
+  color: #c7c7c7;
+  text-align: justify;
+  letter-spacing: .2px;
+  font-weight: 600; }
+  .footer__copyright p {
+    margin-top: 2rem; }

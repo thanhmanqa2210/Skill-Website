@@ -116,6 +116,9 @@ body {
 .aligment-left {
   margin-left: 10%; }
 
+.border-top {
+  border-top: 2px solid #7f7f7f; }
+
 .composition {
   position: relative; }
   .composition__photo {

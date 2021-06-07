@@ -4,12 +4,14 @@ $darkBlue-color: #1c3eff;
 $height-header: 95vh;
 $white-color: #fff;
 $color-black:#000;
+$text-color:rgb(199, 199, 199);
 $default-font-size: 1.6rem;
 $bg-btn-color:rgb(240, 240, 240);
 $color-secondary-light: #ffb900; //Màu Cam
 $color-secondary-dark: #ff7730;
 $color-tertiary-light:#55c57a; // Màu xanh lá cây
 $color-tertiary-dark:#28b485;
+$margin-top-small:2rem;
 *,
 *::before,
 *::after {
@@ -148,4 +150,8 @@ body {
 
 .aligment-left {
     margin-left: 10%;
+}
+
+.border-top {
+    border-top: 2px solid rgb(127, 127, 127);
 }

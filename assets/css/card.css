@@ -117,6 +117,9 @@ body {
 .aligment-left {
   margin-left: 10%; }
 
+.border-top {
+  border-top: 2px solid #7f7f7f; }
+
 .card {
   perspective: 150rem;
   margin: 0 1.5rem;
