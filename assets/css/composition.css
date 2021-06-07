@@ -63,6 +63,7 @@ body {
   color: #fff;
   margin-top: 3rem;
   margin-left: 50%;
+  border: none;
   transform: translateX(-50%); }
   .btn-blue::after {
     background-color: #8597fd; }
@@ -111,6 +112,9 @@ body {
 
 .text-justify {
   text-align: justify; }
+
+.aligment-left {
+  margin-left: 10%; }
 
 .composition {
   position: relative; }

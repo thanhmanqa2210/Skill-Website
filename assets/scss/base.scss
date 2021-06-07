@@ -81,6 +81,7 @@ body {
         color: $white-color;
         margin-top: 3rem;
         margin-left: 50%;
+        border: none;
         transform: translateX(-50%);
         &::after {
             background-color: $lightBlue-color;
@@ -143,4 +144,8 @@ body {
 
 .text-justify {
     text-align: justify;
+}
+
+.aligment-left {
+    margin-left: 10%;
 }

@@ -64,6 +64,7 @@ body {
   color: #fff;
   margin-top: 3rem;
   margin-left: 50%;
+  border: none;
   transform: translateX(-50%); }
   .btn-blue::after {
     background-color: #8597fd; }
@@ -113,6 +114,9 @@ body {
 .text-justify {
   text-align: justify; }
 
+.aligment-left {
+  margin-left: 10%; }
+
 .header {
   background-image: linear-gradient(to right bottom, rgba(142, 158, 252, 0.8), rgba(35, 66, 243, 0.8)), url(../img/background1.jpg);
   background-size: cover;
@@ -158,7 +162,8 @@ body {
 .container {
   /*section skills*/
   /*section courses*/
-  /*section-testimonials*/ }
+  /*section-testimonials*/
+  /* section-enroll */ }
   .container .heading-secondary {
     display: inline-block;
     margin-left: 50%;
@@ -256,3 +261,73 @@ body {
     .container .testimonial:hover .testimonial__img {
       transform: scale(1.05);
       filter: blur(0.5rem) brightness(70%); }
+  .container .section-enroll {
+    padding: 10rem 0;
+    background-image: linear-gradient(to right bottom, #8597fd, #1c3eff); }
+  .container .enroll {
+    background-image: radial-gradient(157% 173% ellipse at -27%, rgba(255, 255, 255, 0.8) 50%, transparent 50%), url("../img/background4.jpg");
+    background-size: cover;
+    height: 47rem;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+    border-radius: 5rem; }
+    .container .enroll h2 {
+      margin-left: 13.8rem; }
+    .container .enroll__form {
+      padding: 6rem; }
+    .container .enroll .form__group:not(:last-child) {
+      margin-bottom: 2rem; }
+    .container .enroll .form__input {
+      font-size: 1.5rem;
+      font-family: inherit;
+      padding: 1.5rem 2rem;
+      color: inherit;
+      border-radius: .5rem;
+      border: 1px solid #ccc;
+      display: block;
+      background-color: rgba(255, 255, 255, 0.5);
+      width: 40%; }
+    .container .enroll .form__input:focus {
+      outline: none;
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+      border-bottom: 3px solid #8597fd; }
+    .container .enroll .form__input:focus:invalid {
+      border-bottom: 3px solid orange; }
+    .container .enroll .form__input::-webkit-input-placeholder {
+      color: #c51414; }
+    .container .enroll .form__radio-input:checked ~ .form__radio-label .form__radio-button::after {
+      display: block; }
+    .container .enroll .form__label {
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-left: 2rem;
+      margin-top: .7rem;
+      display: block;
+      transition: all .3s; }
+    .container .enroll .form__radio-group {
+      width: 20%;
+      display: inline-block; }
+    .container .enroll .form__radio-label {
+      font-size: 1.6rem;
+      cursor: pointer;
+      position: relative;
+      padding-left: 3.5rem; }
+    .container .enroll .form__radio-button {
+      height: 3rem;
+      width: 3rem;
+      border: 0.5rem solid #8597fd;
+      border-radius: 10rem;
+      display: inline-block;
+      position: absolute;
+      left: 0;
+      top: -.4rem; }
+    .container .enroll .form__radio-button::after {
+      content: "";
+      display: none;
+      height: 1.2rem;
+      width: 1.2rem;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #8597fd; }
