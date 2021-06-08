@@ -79,7 +79,7 @@ body {
         background-color: #fff;
     }
     &-blue {
-        background-color: $lightBlue-color;
+        background-color: $mediumBlue-color;
         color: $white-color;
         margin-top: 3rem;
         margin-left: 50%;
@@ -87,7 +87,7 @@ body {
         cursor: pointer;
         transform: translateX(-50%);
         &::after {
-            background-color: $lightBlue-color;
+            background-color: $mediumBlue-color;
         }
         &:hover {
             transform: translate(-50%, -3px);
@@ -155,4 +155,11 @@ body {
 
 .border-top {
     border-top: 2px solid rgb(127, 127, 127);
+}
+
+.absCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
