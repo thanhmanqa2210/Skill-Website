@@ -20,6 +20,8 @@
 </head>
 
 <body>
+
+    <!-- header -->
     <header class="header">
         <div class="header__logo-box">
             <img src="./assets/img/logopng.png" alt="logo" class="logo">
@@ -33,7 +35,7 @@
         </div>
     </header>
     <div class="container grid">
-        <div class="section-about margin-bottom-big">
+        <div class="section-about margin-bottom-big" id="ABOUT__US">
             <h2 class="heading-secondary margin-bottom-big">story about us</h2>
             <div class="row">
                 <div class="col l-6">
@@ -55,7 +57,7 @@
                 </div>
             </div>
         </div>
-        <section class="section-skills">
+        <section class="section-skills" id="OUR__SKILLS">
             <ul class="row wide">
                 <li class="col l-3">
                     <div class="skill-box">
@@ -121,7 +123,7 @@
                                 <div class="card__price-box">
                                     <p class="card__price-only">only</p>
                                     <p class="card__price-value">$16</p>
-                                    <a href="#" class="btn btn--white">Enroll now</a>
+                                    <a href="#popup" class="btn btn--white">Enroll now</a>
                                 </div>
                             </div>
                         </div>
@@ -153,7 +155,7 @@
                                 <div class="card__price-box">
                                     <p class="card__price-only">only</p>
                                     <p class="card__price-value">$20</p>
-                                    <a href="#" class="btn btn--white">Enroll now</a>
+                                    <a href="#popup" class="btn btn--white">Enroll now</a>
                                 </div>
                             </div>
                         </div>
@@ -185,7 +187,7 @@
                                 <div class="card__price-box">
                                     <p class="card__price-only">only</p>
                                     <p class="card__price-value">$25</p>
-                                    <a href="#" class="btn btn--white">Enroll now</a>
+                                    <a href="#popup" class="btn btn--white">Enroll now</a>
                                 </div>
                             </class>
                         </div>
@@ -195,7 +197,7 @@
             </ul>
             <a href="#" class="btn btn-blue">See all our courses</a>
         </section>
-        <section class="section-testimonials">
+        <section class="section-testimonials" id="TESTIMONIALS">
             <div class="bg-video">
                 <video class="bg-video__content" autoplay muted loop>
                    <source src="./assets/img/Boulevard.mp4" type="video/mp4">
@@ -238,7 +240,7 @@
                 <a href="#" class="btn-text x ">read all the testimonials &rarr;</a>
             </div>
         </section>
-        <section class="section-enroll">
+        <section class="section-enroll" id="ENROLL__FORM">
             <div class="row wide">
                 <div class="enroll col l-10 l-o-1">
                     <div class="enroll__form col">
@@ -313,7 +315,7 @@
         </div>
     </footer>
     <!-- /* popup content*/ -->
-    <div class="popup">
+    <div class="popup" id="popup">
         <div class="row">
             <div class="popup__content row">
                 <div class="popup__left l-5">
@@ -323,7 +325,7 @@
                 <div class="popup__right l-7">
                     <div class="popup__right__heading">
                         <h2 class="heading-secondary">Enroll now</h2>
-                        <a href="" class="popup__close">&times;</a>
+                        <a href="#section-courses" class="popup__close">&times;</a>
                     </div>
                     <h3 class="heading-tertiraty">Important &ndash; Please read these terms before booking.</h3>
                     <p class="popup__paragraph">
@@ -332,6 +334,31 @@
                     </p>
                     <a href="#" class="btn btn-blue">enroll now</a>
                 </div>
+            </div>
+        </div>
+    </div>
+    <!-- Navigation bar -->
+    <div class="navigation__bar">
+        <input type="checkbox" hidden id="navi-toggle" class="navigation__checkbox">
+        <label for="navi-toggle" class="navigation__icon fas fa-bars icon__front"></label>
+        <label for="navi-toggle" class="navigation__icon fas fa-times icon__after"></label>
+        <div class="background__body">
+            <div class="full__background"></div>
+            <div class="navigation__background">&nbsp;</div>
+            <div class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__item">
+                        <a href="#ABOUT__US" class="navigation__link">About us</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#OUR__SKILLS" class="navigation__link">Our Skills</a></li>
+                    <li class="navigation__item">
+                        <a href="#section-courses" class="navigation__link">Our courses</a></li>
+                    <li class="navigation__item">
+                        <a href="#TESTIMONIALS" class="navigation__link">Testimonials</a></li>
+                    <li class="navigation__item">
+                        <a href="#ENROLL__FORM" class="navigation__link">Enroll form</a></li>
+                </ul>
             </div>
         </div>
     </div>
